@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
 [ext_resource path="res://logo.png" type="Texture" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://info.tscn" type="PackedScene" id=5]
 [ext_resource path="res://fonts/main_theme.tres" type="Theme" id=6]
 [ext_resource path="res://fonts/code_font.tres" type="DynamicFont" id=7]
-[ext_resource path="res://app_info.tscn" type="PackedScene" id=8]
 
 [node name="main" type="Control"]
 anchor_right = 1.0
@@ -32,7 +31,6 @@ margin_bottom = -32.0
 tab_align = 0
 
 [node name="Metadata" type="Tabs" parent="TabContainer"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 2.0
@@ -174,22 +172,6 @@ anchor_right = 1.0
 margin_top = 34.0
 margin_right = -4.0
 margin_bottom = 250.0
-
-[node name="Program" type="Tabs" parent="TabContainer"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 2.0
-margin_top = 30.0
-margin_right = -2.0
-margin_bottom = -2.0
-tab_align = 0
-
-[node name="app_info" parent="TabContainer/Program" instance=ExtResource( 8 )]
-anchor_right = 1.0
-margin_left = 6.0
-margin_top = 10.0
-margin_right = -6.0
-margin_bottom = 138.0
 
 [node name="top" type="Control" parent="."]
 anchor_right = 1.0
